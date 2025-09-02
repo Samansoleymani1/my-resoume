@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه حرفه‌ای</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+    <style>
+        body { font-family: 'Vazirmatn', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #10b981 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .scroll-indicator { animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .skill-bar { width: 0; transition: width 1.5s ease; }
+        .skill-bar.animate { width: var(--skill-level); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-12 sm:py-16 md:py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
+            <div class="text-center">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 mx-auto mb-4 sm:mb-6 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <i class="fas fa-user-tie text-2xl sm:text-3xl md:text-4xl"></i>
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4"> محمد سلیمانی پور</h1>
+                <p class="text-lg sm:text-xl mb-4 sm:mb-6 opacity-90">   توسعه دهنده وب </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 sm:space-x-4 sm:space-x-reverse">
+                    <a href="#" class="bg-white/20 hover:bg-white/30 px-4 sm:px-6 py-2 sm:py-3 rounded-full transition-all duration-300 backdrop-blur-sm text-sm sm:text-base">
+                        <i class="fas fa-download ml-2"></i>دانلود رزومه
+                    </a>
+                    <a href="#" class="border-2 border-white/30 hover:bg-white/20 px-4 sm:px-6 py-2 sm:py-3 rounded-full transition-all duration-300 text-sm sm:text-base">
+                        <i class="fas fa-envelope ml-2"></i>تماس
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 scroll-indicator">
+            <i class="fas fa-chevron-down text-xl sm:text-2xl"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-12 sm:py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-gray-800">
+                    <i class="fas fa-user ml-2 sm:ml-3 text-blue-600"></i>درباره من
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
+                    <div class="fade-in">
+                        <p class="text-base sm:text-lg leading-relaxed text-gray-600 mb-4 sm:mb-6">
+                          . سلام . من یک سال هست که دات نت کار میکنم . دانشجو ی رشته ی کامپیوتر در مقطع کارشناسی هستم . برای خودم تمرینی و داشنگاهی  پروژه میزنم 
+                        </p>
+                        <p class="text-base sm:text-lg leading-relaxed text-gray-600">
+                            <br>
+                            C#, .NET Core / ASP.NET Core
+<br>
+Entity Framework Core (Code First / Database First)
+<br>
+LINQ, Generics, Asynchronous Programming (async/await)
+<br>
+Authentication & Authorization (JWT, Identity)
+<br>
+MVC / Web API
+<br>
+Error Handling & Logging
+<br>
+Microsoft SQL Server
+<br>
+Swagger
+                        </p>
+                    </div>
+                    <div class="fade-in">
+                        <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-4 sm:p-6 md:p-8 rounded-2xl">
+                            <div class="space-y-3 sm:space-y-4">
+                                <div class="flex items-center text-sm sm:text-base">
+                                    <i class="fas fa-map-marker-alt text-blue-600 ml-2 sm:ml-3"></i>
+                                    <span>تهران، شهرری</span>
+                                </div>
+                                <div class="flex items-center text-sm sm:text-base">
+                                    <i class="fas fa-envelope text-blue-600 ml-2 sm:ml-3"></i>
+                                    <span>samansoleymani50@.com</span>
+                                </div>
+                                <div class="flex items-center text-sm sm:text-base">
+                                    <i class="fas fa-phone text-blue-600 ml-2 sm:ml-3"></i>
+                                    <span>09331298746</span>
+                                </div>
+                                <div class="flex items-center text-sm sm:text-base">
+                                    <i class="fab fa-linkedin text-blue-600 ml-2 sm:ml-3"></i>
+                                    <span>mohammadsoleimani</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-gray-800">
+                    <i class="fas fa-code ml-2 sm:ml-3 text-green-600"></i>مهارت‌ها
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+                    <div class="fade-in">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-gray-700">تکنولوژی‌های فرانت‌اند</h3>
+                        <div class="space-y-3 sm:space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-2 text-sm sm:text-base">
+                                    <span>React.js</span>
+                                    <span>20%</span>
+                                </div>
+                            <div class="bg-gray-200 rounded-full h-2 sm:h-3">
+                                    <div class="skill-bar bg-green-500 h-2 sm:h-3 rounded-full" style="--skill-level: 20%"></div>
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2 text-sm sm:text-base">
+                                    <span>Html,Css</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2 sm:h-3">
+                                    <div class="skill-bar bg-green-500 h-2 sm:h-3 rounded-full" style="--skill-level: 70%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2 text-sm sm:text-base">
+                                    <span> Java Script</span>
+                                    <span>30%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2 sm:h-3">
+                                    <div class="skill-bar bg-green-500 h-2 sm:h-3 rounded-full" style="--skill-level: 30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fade-in">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-gray-700">تکنولوژی‌های بک‌اند</h3>
+                        <div class="space-y-3 sm:space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-2 text-sm sm:text-base">
+                                    <span>C#</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2 sm:h-3">
+                                    <div class="skill-bar bg-blue-500 h-2 sm:h-3 rounded-full" style="--skill-level: 80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2 text-sm sm:text-base">
+                                    <span>.Net</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2 sm:h-3">
+                                    <div class="skill-bar bg-blue-500 h-2 sm:h-3 rounded-full" style="--skill-level: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2 text-sm sm:text-base">
+                                    <span>SqlServer</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2 sm:h-3">
+                                    <div class="skill-bar bg-blue-500 h-2 sm:h-3 rounded-full" style="--skill-level: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-12 sm:py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-gray-800">
+                    <i class="fas fa-briefcase ml-2 sm:ml-3 text-blue-600"></i>تجربیات کاری
+                </h2>
+                <div class="space-y-6 sm:space-y-8">
+                    <div class="fade-in card-hover bg-gradient-to-r from-blue-50 to-cyan-50 p-4 sm:p-6 md:p-8 rounded-2xl border-r-4 border-blue-500">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-0 mb-4">
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800"> وب سایت سفریار  </h3>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm self-start">1403 - حال حاضر</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl text-blue-600 mb-3"> شخصی</h4>
+                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+
+با استفاده از دات نت با معماری تمیز یک پروژه کاربردی مخصوص سفر ساخنه ام که همسفر های خود را پیدا کنند و قابلیت چت آنلاین داشته باشند
+
+
+                        </p>
+                    </div>
+                    <div class="fade-in card-hover bg-gradient-to-r from-blue-50 to-cyan-50 p-4 sm:p-6 md:p-8 rounded-2xl border-r-4 border-blue-500">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-0 mb-4">
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">بک اند-وب API</h3>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm self-start">1404-1404</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl text-blue-600 mb-3">یادداشت</h4>
+                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+یک ساختار دفترچه یادداشت با قابلیت دسته بندی و تگ و تایتل و اپلود فایل های مختلف نوشته ام که کاربر بتونه روزمره ی خود را یادداشت کند .
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-gray-800">
+                    <i class="fas fa-project-diagram ml-2 sm:ml-3 text-orange-600"></i>پروژه‌های برجسته
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <div class="fade-in card-hover bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
+                        <div class="w-full h-32 sm:h-40 md:h-48 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl mb-3 sm:mb-4 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-white text-2xl sm:text-3xl md:text-4xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-800"> سفریار</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">پلتفرم هم مسیر شدن در سفر</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-orange-100 text-orange-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">Bootstrap</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">.NetCore</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">SQLserver</span>
+                        </div>
+                    </div>
+                    <div class="fade-in card-hover bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
+                        <div class="w-full h-32 sm:h-40 md:h-48 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-xl mb-3 sm:mb-4 flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-white text-2xl sm:text-3xl md:text-4xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-800">دفتریادداشت</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">نوشته شده فقط با API  و تست در  Swagger</p>
+                        <div class="flex flex-wrap gap-2">
+                          <!----  <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">React </span> 1-->
+                            <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">.NET Core</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">SQLServer</span>
+                        </div>
+                    </div>
+               <!--     <div class="fade-in card-hover bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
+                        <div class="w-full h-32 sm:h-40 md:h-48 bg-gradient-to-br from-green-400 to-teal-500 rounded-xl mb-3 sm:mb-4 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-2xl sm:text-3xl md:text-4xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-800">داشبورد تحلیلی</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">سیستم گزارش‌گیری و تحلیل داده‌ها با نمودارهای تعاملی</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">Vue.js</span>
+                            <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">D3.js</span>
+                            <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">Python</span>
+                            <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    -->>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-12 sm:py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-gray-800">
+                    <i class="fas fa-graduation-cap ml-2 sm:ml-3 text-teal-600"></i>تحصیلات
+                </h2>
+                <div class="space-y-6 sm:space-y-8">
+                    <div class="fade-in card-hover bg-gradient-to-r from-teal-50 to-cyan-50 p-4 sm:p-6 md:p-8 rounded-2xl border-r-4 border-teal-500">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-0 mb-4">
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">مهندسی نرم افزار-کارشناسی</h3>
+                            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs sm:text-sm self-start">1400 - 1405</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl text-teal-600 mb-3">دانشگاه یادگار امام</h4>
+                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+تخصص در زمینه ی کامپیوتر و برنامه نویسی 
+                        </p>
+                    </div>
+                <!----   <div class="fade-in card-hover bg-gradient-to-r from-green-50 to-emerald-50 p-4 sm:p-6 md:p-8 rounded-2xl border-r-4 border-green-500">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-0 mb-4">
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">کارشناسی مهندسی کامپیوتر</h3>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs sm:text-sm self-start">۱۳۹۲ - ۱۳۹۶</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl text-green-600 mb-3">دانشگاه صنعتی شریف</h4>
+                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                            پایه قوی در علوم کامپیوتر، الگوریتم‌ها و ساختار داده‌ها. پروژه‌های متعدد در زمینه توسعه وب.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> !-->
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-12 sm:py-16 md:py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 md:mb-16">
+                    <i class="fas fa-paper-plane ml-2 sm:ml-3"></i>تماس با من
+                </h2>
+                <p class="text-lg sm:text-xl mb-8 sm:mb-12 opacity-90">
+                    آماده همکاری در پروژه‌های جذاب و چالش‌برانگیز هستم. 
+                    بیایید درباره ایده‌هایتان صحبت کنیم!
+                </p>
+                <div class="flex justify-center gap-4 sm:gap-6">
+                    <a href="#" class="bg-white/20 hover:bg-white/30 p-3 sm:p-4 rounded-full transition-all duration-300 backdrop-blur-sm">
+                        <i class="fab fa-linkedin text-xl sm:text-2xl"></i>
+                    </a>
+                    <a href="#" class="bg-white/20 hover:bg-white/30 p-3 sm:p-4 rounded-full transition-all duration-300 backdrop-blur-sm">
+                        <i class="fab fa-github text-xl sm:text-2xl"></i>
+                    </a>
+                    <a href="#" class="bg-white/20 hover:bg-white/30 p-3 sm:p-4 rounded-full transition-all duration-300 backdrop-blur-sm">
+                        <i class="fab fa-twitter text-xl sm:text-2xl"></i>
+                    </a>
+                    <a href="#" class="bg-white/20 hover:bg-white/30 p-3 sm:p-4 rounded-full transition-all duration-300 backdrop-blur-sm">
+                        <i class="fas fa-envelope text-xl sm:text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
